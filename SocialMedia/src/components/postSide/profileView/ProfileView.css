@@ -1,0 +1,169 @@
+.profileVIewCard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3rem;
+    overflow-x: clip;
+    position: relative;
+    gap: .65rem;
+    background: #ffffff;
+    padding-bottom: 1rem;
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 1px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.menuOption{
+  position: absolute;
+  right: 0rem;
+  z-index: 1;
+}
+.menuItem>span:hover{
+  transition: 250ms ease-in-out;
+  transform: scale(1.05);
+}
+.profileViewImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 1px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.coverView>img{
+    width: 100%;
+    border-radius: 0.3rem;
+    opacity: 0.9;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 1px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.profileViewImage>img{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -4rem;
+    left: 1rem;
+    box-shadow: var(--profileShadow);
+    transition: transform .2s;
+} 
+.profileViewName{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+    padding-left: 1rem;
+    position: relative;
+}
+.profileViewName>span:nth-of-type(2){
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: serif;
+    margin-top: -5px;
+}
+.profileViewName>span:nth-of-type(1){
+    font-family: serif;
+    font-size: large;
+    font-weight: bold;
+    color: #c9057ec3;
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+  gap:0.3rem;
+  padding:0.5rem;
+  width: 90%;
+}
+.desc>span{
+  font-size: medium;
+  font-family: serif;
+  font-weight: 600;
+  color:  #360f0f;
+  line-clamp: 2;
+  padding-left: 0.3rem;
+}
+.country{
+  display: flex;
+  align-items: center;
+  color:#ff0000;
+  margin-left: 3px;
+}
+.country>span{
+  padding-left: 0.3rem;
+  display: flex;
+  align-items: center;
+  color: #460202;
+  font-size: medium;
+  font-family: serif;
+  font-weight: bold;
+}
+.social{
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.social>span:nth-child(1)>a{
+  color: #0089f9fa;
+  /* margin-left: -10px; */
+}
+.social>span:nth-child(2)>a{
+  color:  #8C2A2A;
+  margin-left: 5px;
+}
+.social>span:nth-child(3)>a{
+  color: #001374;
+  margin-left: 5px;
+}
+
+.social>span{
+  display: flex;
+  align-items: center;
+  font-family: serif;
+  font-weight: bold;
+  font-size: medium;
+}
+.social>span:nth-of-type(1){
+  color: #0089f9fa;
+}
+.social>span:nth-of-type(2){
+  color: #8C2A2A;
+}
+.social>span:nth-of-type(3){
+  color: #001374;
+}
+
+@media only screen and (max-width: 1130px) {
+.social{
+  gap: 2rem !important;
+}
+.social>span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}
+@media only screen and (max-width: 1020px) {
+.social{
+  gap: 0rem !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.social>span{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+}
+@media only screen and (max-width: 415px) {
+.social{
+  gap: 1rem !important;
+}
+.social>span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}

@@ -1,0 +1,44 @@
+.userr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    height: 100%;
+}
+.userName{
+    display: flex;
+    flex-direction: column;
+}
+.usersDetail{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.usersDetail>img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 1px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.userName>span:nth-of-type(1){
+    font-weight: bold;
+    font-family: serif;
+    font-size: 1.1rem;
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.userName>span:nth-of-type(2){
+    font-family: serif;
+    font-weight: 500;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.users::-webkit-scrollbar {
+    display: none;
+  } 

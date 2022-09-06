@@ -1,0 +1,111 @@
+.profileCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.3rem;
+    overflow-x: clip;
+    position: relative;
+    gap: .65rem;
+    background: #ffffff;
+    padding-bottom: 1rem;
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 1px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.profileImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+.cover>img{
+    width: 100%;
+    border-radius: 0.3rem;
+    opacity: 0.9;
+}
+.profileImage>img{
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3.5rem;
+    box-shadow: var(--profileShadow);
+    transition: transform .2s;
+} 
+
+.profileName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 5px;
+}
+.profileName>span:nth-of-type(1){
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: serif;
+}
+.profileName>span:nth-of-type(2){
+    font-family: serif;
+    font-weight: bold;
+    font-family: serif;
+    font-size: large;
+    margin-top: -5px;
+    color: #c9057ec3;
+}
+
+.followStatus{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+}
+.followStatus>hr{
+    width: 85%;
+    border: 1px solid var(--hrColor);
+}
+.followStatus>div{
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    align-items: center;
+    justify-content: center;
+}
+.follow>span:nth-of-type(1){
+    font-weight: bold;
+    font-family: serif;
+    color:  #8C2A2A;
+}
+.follow>span:nth-of-type(2){
+    font-family: serif;
+    color: var(--gray);
+    font-weight: 600;
+}
+.vl{
+ height: 150%;
+ border-left: 2px solid var(--hrColor);
+}
+.linkto>span{
+    outline: none;
+    font-size: 1rem;
+    font-family: serif;
+    padding: 0.4rem 1rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    color: rgb(255, 98, 0);
+    cursor: pointer;
+}
+.linkto>span:hover{
+    box-shadow: 0px 2px 2px 2px rgb(228, 221, 221);
+}

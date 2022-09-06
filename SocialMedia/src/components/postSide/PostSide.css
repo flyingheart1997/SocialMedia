@@ -1,0 +1,21 @@
+.postSide{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.postScroll{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    align-items: center;
+    width: 100%;
+}
+.postScroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  

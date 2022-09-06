@@ -1,0 +1,86 @@
+.home{
+    width: 100%;
+    display: grid;
+    grid-template-columns:20rem auto 19.2rem;
+    gap: 0.7rem;
+    overflow: hidden;
+    position: relative;
+    overflow: auto;
+}
+.leftmenu{
+    position: absolute;
+    width: 5rem;
+    z-index: 1;
+    height: 100%;
+    background-color:rgba(45, 44, 44, 0.05);
+    margin-left: -4rem;
+    transition: all 355ms;
+}
+.leftmenu:hover{
+    width: 5rem;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.869);
+    margin-left: 0rem;
+}
+.profile{
+    display: flex;
+    overflow: auto;
+    height: 100%;
+    width: 20rem;
+}
+.post{ 
+    display: flex;
+    overflow: auto;
+    width: 100%;
+}
+.user{
+    display: flex;
+    overflow: auto;
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    width: 19.2rem;
+    height: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 1050px) {
+    .home{
+        grid-template-columns: 19rem auto 19rem;
+    }
+    .user{
+        width: 19rem;
+    }
+    .profile{
+        width: 19rem;
+    }
+}
+@media only screen and (max-width: 1020px) {
+    .user{
+        display: none;
+    }
+    .profile{
+        width: 20rem;
+    }
+    .home{
+        grid-template-columns: 20rem auto;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 767px) {
+   
+    .user{
+        display: none;
+    }
+    .profile{
+        display: none;
+    }
+    .home{
+        grid-template-columns: auto;
+    }
+} 

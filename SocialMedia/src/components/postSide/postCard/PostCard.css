@@ -1,0 +1,186 @@
+.postCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.3rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+}
+.postCard>video{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 0.3rem;
+}
+.postCard>img{
+    border-radius: 0.3rem;
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.details{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    padding: 0.5rem;
+    position: relative;
+}
+.imgdetail{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    margin-top: 1em;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.othdetail{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+}
+.imgdetail>img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all 250ms;
+}
+.othdetail>span>img{
+    transition: all 250ms;
+}
+.othdetail>span>img:hover{
+    transform: scale(1.1);
+}
+.othdetail>img{
+    transition: all 250ms;
+}
+.othdetail>img:hover{
+    transform: scale(1.1);
+}
+.name>span:nth-of-type(1){
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.userandDate>span:nth-of-type(1){
+    font-family: serif;
+    font-weight: 600;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000c48f0;;
+}
+
+.userandDate>span:nth-of-type(2){
+    font-family: serif;
+    color: #2a2e45f0;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+.postCard>span{
+    font-family: serif;
+    color: var(--black);
+    margin-top: -0.9rem !important;
+    margin-left: 0.2rem;
+    font-size: medium;
+}
+
+.menuOption{
+    position: absolute;
+    right: 0rem;
+}
+
+
+.postCard::-webkit-scrollbar {
+    display: none;
+  }
+  @media only screen and (max-width: 1100px) {
+    .othdetail{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        position: absolute;
+        top: 1rem;
+        right: 0.5rem;
+    }
+    .name>span:nth-of-type(1){
+        font-family: serif;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        width: 130px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .userandDate>span:nth-of-type(1){
+        font-family: serif;
+        font-weight: 600;
+        font-size: medium;
+        width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #000000a9;
+    }
+}
+  @media only screen and (max-width: 1020px) {
+    .othdetail{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        position: absolute;
+        top: 1.2rem;
+        right: 0.5rem;
+    }
+    .name>span:nth-of-type(1){
+        font-family: serif;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        width: auto;
+    }
+    .userandDate>span:nth-of-type(1){
+        font-family: serif;
+        font-weight: 600;
+        font-size: medium;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .othdetail{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        position: absolute;
+        top: 1.2rem;
+        right: 0.5rem;
+    }
+    .name>span:nth-of-type(1){
+        font-family: serif;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        width: 130px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .userandDate>span:nth-of-type(1){
+        font-family: serif;
+        font-weight: 600;
+        font-size: medium;
+        width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #000000a9;
+    }
+}

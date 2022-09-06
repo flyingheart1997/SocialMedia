@@ -1,0 +1,25 @@
+
+.active{
+    padding: 5px;
+    display: flex;
+    justify-items: center;
+    position: relative;
+}
+.active>img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.dot{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: #c7ba00;
+    top: 0.5rem;
+}
+.activeUser::-webkit-scrollbar {
+    height: 5px;
+  }

@@ -1,0 +1,76 @@
+
+.chats{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #c6acac;
+    position: relative;
+    overflow-y: scroll;
+    gap: 1rem;
+    border-radius: 0.3rem;
+}
+
+.delete{
+    cursor: pointer;
+}
+.delete:hover{
+    color:#fff;
+    transform:scale(1.1)
+}
+.message{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    margin: -0.5rem 0.2rem 0.2rem 0.2rem;
+    padding: 0.5rem;
+    background-color:#383636a2;
+    box-shadow: rgb(60, 59, 59) 3px 3px 6px 0px inset, rgba(70, 69, 69, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 0.3rem;
+    overflow: auto;
+    gap: 1rem;
+}
+
+.senderInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 0.3rem;
+    background-color: #f9f3f32f;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: -0.5rem 0.2rem 0rem 0.2rem;
+
+}
+.senderInput>img{
+    cursor: pointer;
+}
+
+.react-input-emoji--container{
+    z-index: 0 !important;
+    border: none !important;
+}
+.react-input-emoji--wrapper{
+    background-color: #0202025b !important;
+    border-radius: 0.3rem !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    
+}
+.react-input-emoji--placeholder{
+    color: rgba(221, 221, 221, 0.849);
+}
+
+.chats::-webkit-scrollbar{
+    display: none;
+}
+.message::-webkit-scrollbar{
+    display: none;
+}
+@keyframes blink {  
+    0% { opacity: 1.0; color: #8b1212; }
+    25% { opacity: 0.8; color: rgba(60, 60, 236, 0.861);}
+    50% { opacity: 0.6; color: rgb(239, 74, 74);}
+    75% { opacity: 0.8; color: rgb(103, 27, 0);}
+    100% { opacity: 1.0; color: rgb(11, 11, 11);}
+    }

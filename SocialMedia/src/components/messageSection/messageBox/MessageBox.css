@@ -1,0 +1,16 @@
+
+.allmessage{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hoverMessage:hover .deleteMessage {
+    display: block;
+    transition: 2s ease-out;
+    cursor: pointer;
+}
+.hoverMessage .deleteMessage {
+    display: none;
+    transition: 3s ease-out;
+}
